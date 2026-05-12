@@ -2,7 +2,7 @@ import axios from "axios"
 // axios is used connect to the backend server and make API calls to the authentication endpoints. The baseURL is set to http://localhost:3000, which is where the backend server is running. The withCredentials option is set to true to allow sending cookies with the requests, which is necessary for maintaining user sessions.
 
 const api = axios.create({
-    baseURL: "http://localhost:3000",
+    baseURL: import.meta.env.VITE_API_URL,
     withCredentials: true
 })
 // withCredentials: true is used to allow sending cookies with the requests, which is necessary for maintaining user sessions.
