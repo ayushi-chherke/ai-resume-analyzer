@@ -1,0 +1,64 @@
+# AI Resume Analyzer 🤖
+
+An AI-powered full-stack application that analyzes resumes against job descriptions using LLM APIs and generates tailored interview insights.
+
+## 🚀 Features
+
+- Resume PDF Parsing
+- AI Resume Matching
+- Skill Gap Analysis
+- AI-Generated Interview Questions
+- Authentication System
+- PDF Report Generation
+- Responsive Dashboard
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+- React.js
+- Vite
+- Tailwind CSS
+- Axios
+
+### Backend
+- Node.js
+- Express.js
+- MongoDB Atlas
+- Mongoose
+- JWT Authentication
+
+### AI & Utilities
+- Gemini / OpenAI API
+- PDF Parsing
+- REST APIs
+
+---
+
+## ⚡ AI Features
+
+- Resume scoring
+- Keyword extraction
+- Skill matching
+- Tailored interview question generation
+- ATS-style resume evaluation
+
+---
+
+## 📦 Installation & Setup
+
+#Clone Repository
+
+```bash
+git clone https://github.com/ayushi-chherke/ai-resume-analyzer.git
+
+### Install Dependencies -
+npm install
+
+
+###create .env - MONGO_URI=your_mongodb_connection_string
+
+JWT_SECRET=your_jwt_secret
+
+GEMINI_API_KEY=your_gemini_api_key
