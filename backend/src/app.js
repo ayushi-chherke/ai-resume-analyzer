@@ -9,7 +9,7 @@ app.use(cookieParser())
 app.use(cors({
     origin: [
         "http://localhost:5173",
-        "https://your-vercel-app.vercel.app"
+        "https://resume-analyzer-ai-coral.vercel.app"
     ],
     credentials: true
 }))
