@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "http://localhost:3000",
+    baseURL: import.meta.env.VITE_API_URL,
     withCredentials: true,
 });
 
@@ -24,7 +24,6 @@ export const generateInterviewReport = async ({ jobDescription, selfDescription,
     return response.data;
 };
 
-
 /**
  * @description Get interview report by ID
  */
@@ -33,7 +32,6 @@ export const getInterviewReportById = async (id) => {
     return response.data;
 };
 
-
 /**
  * @description Get all interview reports
  */
@@ -41,7 +39,6 @@ export const getAllInterviewReports = async () => {
     const response = await api.get("/api/interview/");
     return response.data;
 };
-
 
 /**
  * @description Generate & download resume PDF
